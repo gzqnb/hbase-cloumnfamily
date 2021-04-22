@@ -1,0 +1,21 @@
+hbase:
+  zookeeper:
+    quorum: zk-0.zk-hs.default.svc.cluster.local:2181,zk-1.zk-hs.default.svc.cluster.local:2181,zk-2.zk-hs.default.svc.cluster.local:2181
+#
+#
+#zookeeper:
+#  znode:
+#    parent: /HBase
+
+spring.datasource:
+  url: jdbc:postgresql://172.20.240.91:30101/db1
+  username: nevt
+  password: nevt@db1
+spring.jpa:
+  database: postgresql
+  properties.hibernate.dialect: org.hibernate.dialect.PostgreSQL9Dialect
+  hibernate.ddl-auto: update
+  show-sql: false
+
+logging.level:
+  root: info
